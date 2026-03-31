@@ -65,7 +65,7 @@ Schedule Trigger
 
 ## Workflow
 
-![n8n Workflow Canvas](./assets/workflow-screenshot.png)
+![n8n Workflow Canvas](./workflow-screenshot.png)
 
 The n8n workflow handles the full processing and delivery pipeline:
 
@@ -137,10 +137,8 @@ The demo uses sanitized mock data to walk through the full pipeline — from sch
 ## Repository Structure
 
 ```
-├── workflow/
-│   └── multi-channel-notification-demo.json   # Importable n8n workflow (demo version)
-├── assets/
-│   └── workflow-screenshot.png                # n8n canvas screenshot
+├── multi-channel-notification-demo-v3.json
+├── workflow-screenshot.png
 └── README.md
 ```
 
@@ -150,7 +148,7 @@ The demo uses sanitized mock data to walk through the full pipeline — from sch
 
 To run the demo workflow locally:
 
-1. Import `workflow/multi-channel-notification-demo.json` into your n8n instance
+1. Import `workflow/multi-channel-notification-demo-v3.json` into your n8n instance
 2. Connect your Slack and Gmail credentials in the respective nodes
 3. The HTTP Request node uses pinned mock data — no backend required for the demo
 4. Clear deduplication history in the **Remove Duplicates** node before each test run
